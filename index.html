@@ -1,0 +1,248 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            /******EXEMPLO 1
+            var numero = 5; //variavel
+            const constante = 5 //constante
+            
+            console.log(numero) //mostrar numero
+            console.log('alo') //mostrar numero   *********/
+         
+
+            /******EXEMPLO 2
+            let Nota1 = 8;
+            let Nota2 = 6.2;
+            let Nota3 = 6;
+            let media = (Nota1 + Nota2 + Nota3) / 3;
+
+            if (media >= 6) {
+            console.log("Aprovado");
+            } else {
+            console.log("Reprovado");
+            }
+
+            console.log("O valor da média é " + media); **********/
+
+
+           /******EXERCÍCIO 1
+           Identifique os dados de entrada, processamento e saída no algoritimo abaixo:
+
+          .Receba código da peça
+          .Receba valor da peça
+          .Receba Quantidade de peças
+          .Calcule o valor total da peça(Quantidade * Valor da peça)
+          .Mostre o código da peça e seu valor total
+
+           RESPOSTA: ***/
+
+           /****** Entrada de Dados
+           let codigoDaPeca = prompt("Digite o código da peça:");
+           let valorDaPeca = prompt("Digite o valor da peça:");
+           let quantidadeDePecas = prompt("Digite a quantidade de peças:");
+           // Processamento
+           let valorTotal = valorDaPeca * quantidadeDePecas;
+           // Saída de Dados
+           console.log("Código da peça: " + codigoDaPeca);
+           console.log("Valor total da(s) peça(s): R$" + valorTotal);  ****/
+
+
+
+           /******EXERCÍCIO 2
+           Faça um algoritmo para "Calcular o estoque médio de uma peça", 
+           sendo que ESTOQUEMÉDIO = (QUANTIDADE MÍNIMA + QUANTIDADE MÁXIMA)/2
+
+           //RESPOSTA:
+           
+           // Entrada de Dados
+           let quantidadeMinima = prompt("Digite a quantidade mínima em estoque:");
+           let quantidadeMaxima = prompt("Digite a quantidade máxima em estoque:");
+           
+           // Processamento
+           let estoqueMedio = (quantidadeMinima + quantidadeMaxima) / 2;
+           
+           // Saída
+           console.log("O estoque médio da peça é: " + estoqueMedio); ******/
+
+
+           /******EXERCÍCIO 3
+           Teste o algoritmo anterior com dados definidos.
+
+           //RESPOSTA: 
+           
+           // Entrada de Dados
+           const quantidadeMinima = 2;
+           const quantidadeMaxima = 100;
+           
+           // Processamento
+           const estoqueMedio = (quantidadeMinima + quantidadeMaxima) / 2;
+           
+           // Saída
+           console.log("O estoque médio da peça é: " + estoqueMedio); ******/
+
+
+           /******EXERCÍCIO 1-2
+           Tendo as variáveis SALARIO, IR e SALLIQ. 
+           SALARIO   IR    SALLIQ   EXPRESSÃO                       RESPOSTA:
+           100,00    0,00    100    (SALLIQ >= 100,00)              ( V )True
+           200,00   10,00  190,00   (SALLIQ < 190,00)               ( F )False
+           300,00   15,00  285,00   (SALLIQ == SALARIO - IR)        ( V )True
+
+           //RESPOSTA: 
+
+           // Expressão 1:
+           // Entrada de Dados
+           let Salario = 100.00;
+           let IR = 0.00;
+           let Salliq = 100;
+           
+           // Processamento
+           let Expressao1 = Salliq >= 100.00
+           // Saída
+           console.log("A Expressão 1 é: " + Expressao1); //
+
+
+           // Expressão 2:
+           // Entrada de Dados
+           let Salario = 200.00;
+           let IR = 10.00;
+           let Salliq = 190.00;
+
+           // Processamento
+           let Expressao2 = Salliq < 190.00
+           // Saída
+           console.log("A Expressão 2 é: " + Expressao2);
+
+
+           // Expressão 3:
+           // Entrada de Dados
+           let Salario = 300.00;
+           let IR = 15.00;
+           let Salliq = 285.00;
+
+           // Processamento
+           let Expressao3 = Salliq == Salario - IR
+           // Saída
+           console.log("A Expressão 3 é: " + Expressao3); //
+
+          
+
+           /****** EXERCÍCIO 2.2
+           Sabendo que A=3, B=7 e C=4, informe se as expressões abaixo são verdadeiras ou falsas.
+           a) (A+C) > B     ( F )
+           b) B >= (A + 2)  ( V )
+           c) C = (B - A)   ( V )
+           d) (B + A) <= C  ( F )
+           e) (C + A) > B   ( F ) 
+
+           //RESPOSTA:
+           // Expressão A
+           // Entrada de Dados
+           const A = 3
+           const B = 7
+           const C = 4
+
+           // Processamento
+           const ExpressaoA = (A + C) > B
+           // Saída
+           console.log("A Expressão A é: " + ExpressaoA);  //
+
+
+           // Expressão B
+           // Entrada de Dados
+           const A = 3
+           const B = 7
+           const C = 4
+
+           // Processamento
+           const ExpressaoB =  B >= (A + 2)
+           // Saída
+           console.log("A Expressão B é: " + ExpressaoB);  //
+
+
+           // Expressão C
+           // Entrada de Dados
+           const A = 3
+           const B = 7
+           const C = 4
+
+           // Processamento
+           const ExpressaoC = C == (B - A)
+           // Saída
+           console.log("A Expressão C é: " + ExpressaoC);  //
+
+
+           // Expressão D
+           // Entrada de Dados
+           const A = 3
+           const B = 7
+           const C = 4
+
+           // Processamento
+           const ExpressaoD = (B + A) <= C 
+           // Saída
+           console.log("A Expressão D é: " + ExpressaoD);  //
+
+
+           // Expressão E
+           // Entrada de Dados
+           const A = 3
+           const B = 7
+           const C = 4
+
+           // Processamento
+           const ExpressaoE = (C + A) > B
+           // Saída
+           console.log("A Expressão E é: " + ExpressaoE);  
+
+
+           /****** EXERCÍCIO 2.3
+           Sabendo que A=5, B=4 e C=3 e D=6, informe se as expressões abaixo são verdadeiras ou falsas.
+           a) (A > C) AND (C <=D)                       ( V )
+           b) (A + B) > 10 OR (A + B) = (C + D)         ( V )
+           c) (A >= C) AND (D >=C)                      ( V ) 
+
+           //RESPOSTA:
+           // Expressão A
+           // Entrada de Dados
+           const A = 5
+           const B = 4
+           const C = 3
+           const D = 6
+
+           // Processamento
+           const ExpressaoA = (A > C) && (C <=D) 
+           // Saída
+           console.log("A Expressão A é: " + ExpressaoA);  //
+
+
+           // Expressão B
+           // Entrada de Dados
+           const A = 5
+           const B = 4
+           const C = 3
+           const D = 6
+
+           // Processamento
+           const ExpressaoB = (A + B) > 10 || (A + B) == (C + D) 
+           // Saída
+           console.log("A Expressão B é: " + ExpressaoB);  //
+
+
+           // Expressão C
+           // Entrada de Dados
+           const A = 5
+           const B = 4
+           const C = 3
+           const D = 6
+
+           // Processamento
+           const ExpressaoC = (A >= C) && (D >=C)   
+           // Saída
+           console.log("A Expressão C é: " + ExpressaoC); 
+           
+           ******FIM***/
+
+        </script>
+    </body>
+</html>
